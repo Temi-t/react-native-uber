@@ -8,10 +8,10 @@ export default function App() {
   return (
     <Provider store={store}>
       <HomeScreen />
-      <View style={styles.container}>
+      {/*<View style={styles.container}>
         <Text>Welcome uber app!</Text>
-        {/*<StatusBar style="auto" />*/}
-      </View>
+      <StatusBar style="auto" />
+  </View>*/}
     </Provider>
   );
 }
