@@ -1,19 +1,25 @@
-import { StatusBar } from "expo-status-bar";
+//import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import { Provider } from "react-redux";
+import HomeScreen from "./screens/HomeScreen";
+import { store } from "./store";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Welcome uber app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider store={store}>
+      <HomeScreen />
+      <View style={styles.container}>
+        <Text>Welcome uber app!</Text>
+        {/*<StatusBar style="auto" />*/}
+      </View>
+    </Provider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "aqua",
     alignItems: "center",
     justifyContent: "center",
   },
