@@ -1,11 +1,12 @@
 import { StyleSheet, Text, SafeAreaView, View, Image } from "react-native";
 import React from "react";
 import tw from "twrnc";
+import NavOptions from "../components/NavOptions";
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView style={tw`bg-pink-100 h-full`}>
-      <View>
+    <SafeAreaView style={tw`bg-white h-full`}>
+      <View style={tw`p-5`}>
         <Image
           style={{
             width: 100,
@@ -16,6 +17,7 @@ const HomeScreen = () => {
             uri: "http://links.papareact.com/gzs",
           }}
         />
+        <NavOptions />
       </View>
     </SafeAreaView>
   );
