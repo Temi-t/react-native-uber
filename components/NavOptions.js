@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import React from "react";
 import tw from "twrnc";
+import { Icon } from "@rneui/base";
 
 const data = [
   {
@@ -37,6 +38,7 @@ const NavOptions = () => {
               source={{ uri: item.image }}
             />
             <Text style={tw`mt-2 text-lg font-semibold `}>{item.title}</Text>
+            <Icon type="font-awesome" name="arrow-circle-right" color="black" />
           </View>
         </TouchableOpacity>
       )}
