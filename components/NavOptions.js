@@ -38,7 +38,12 @@ const NavOptions = () => {
               source={{ uri: item.image }}
             />
             <Text style={tw`mt-2 text-lg font-semibold `}>{item.title}</Text>
-            <Icon type="font-awesome" name="arrow-circle-right" color="black" />
+            <Icon
+              style={tw`bg-black p-2 rounded-full w-10`}
+              type="font-awesome"
+              name="arrow-right"
+              color="white"
+            />
           </View>
         </TouchableOpacity>
       )}
